@@ -16,3 +16,4 @@ def get_primes(n):
 if __name__ == "__main__":
 	n = int(input("Find primes up to: "))
 	print(get_primes(n))
+	print(f"Number of primes found: {len(get_primes(m, n))}")
