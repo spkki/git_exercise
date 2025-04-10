@@ -8,12 +8,13 @@ def is_prime(num):
 
 def get_primes(n):
 	primes = []
-	for i in range(2, n+1):
+	for i in range(m, n+1):
 		if is_prime(i):
 			primes.append(i)
 	return primes
 
 if __name__ == "__main__":
+	m = int(input("Start prime search from:  "))
 	n = int(input("Find primes up to: "))
 	print(get_primes(n))
 	print(f"Number of primes found: {len(get_primes(m, n))}")
